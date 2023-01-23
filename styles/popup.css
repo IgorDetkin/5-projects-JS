@@ -68,10 +68,11 @@
 }
 
 .popup__text {
-    margin: 0 0 5px;
+    margin: 0 0 7px;
+    color: green;
     font-family: "Inter", sans-serif;
     font-size: 26px;
-    text-shadow: 1px 1px 10px grey;
+    text-shadow: 0px 0px 5px greenyellow ;
 }
 
 

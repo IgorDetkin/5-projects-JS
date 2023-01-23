@@ -410,4 +410,21 @@ popup.addEventListener('click', closePopupOverlay);
 
 
 
+const phrases = [
+    {
+        phrase: 'Ваш приз - мост от Нивы!'
+    },
+    {
+        phrase: 'Вы выиграли коробку от пиццы!'
+    },
+    {
+        phrase: 'Ваш подарок - ведро лисичек!'
+    },
+    {
+        phrase: 'Генератор голода теперь ваш!'
+    }
+]
 
+function createText(phrase) {
+
+}

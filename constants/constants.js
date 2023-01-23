@@ -15,7 +15,7 @@ export const pictures = [
         link: 'https://www.youtube.com/watch?v=AjFhmMgd_TE'
     },
     {
-        picLink: './images/R33.avif',
+        picLink: './images/R33.jpg',
         name: 'R33',
         link: 'https://www.youtube.com/watch?v=t30HOeCFzjk'
     },
