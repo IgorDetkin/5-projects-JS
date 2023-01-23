@@ -3,7 +3,7 @@
     padding: 0;
     /* width: 1280px; */
     box-sizing: border-box;
-    /* min-width: 1024px; */
+    min-width: 1024px;
 }
 
 /* .root_width { */
