@@ -1,0 +1,53 @@
+
+.about {
+    background-color: #101010;
+    background-image: url('../images/qqquad.svg');
+}
+
+.about__container {
+    margin: auto;
+    max-width: 1280px;
+    padding: 50px 30px 50px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: flex-start;
+    height: 640px;
+}
+
+.about__titles {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.about__title-number {
+    margin: 0 0 0 95px;
+    font-family: 'Roboto' ;
+    height: 300px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 300px;
+    text-align: center;
+    color: #eee;
+    /* color: transparent; */
+    /* -webkit-text-stroke: 1px white; */
+
+}
+
+.about__title-text {
+    margin: 0 0;
+    color: #8b8b8b;
+    font-family: 'Muli', 'Inter' ;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    letter-spacing: -.04em;
+}
+
+.about__img {
+    width: 700px;
+    height: 350px;
+    object-fit: cover;
+}

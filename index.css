@@ -1,0 +1,17 @@
+@import url(./vendor/normalize.css);
+@import url(./vendor/fonts/font.css);
+
+@import url(./styles/root.css);
+@import url(./styles/header.css);
+@import url(./styles/about.css);
+/* @import url(./styles/page.css); */
+@import url(./styles/styles1.css);
+@import url(./styles/styles2.css);
+
+@import url(./styles/styles4.css);
+@import url(./styles/styles3.css);
+@import url(./styles/styles5.css);
+
+@import url(./styles/footer.css);
+@import url(./styles/popup.css);
+

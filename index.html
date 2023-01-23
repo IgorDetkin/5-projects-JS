@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./index.css" />
+  <title>Карточки | Проект 1</title>
+</head>
+
+<body class="root">
+
+<header id="header" class="header">
+  <div class="header_container">
+    <ul class="header__menu">
+      <li>
+        <a  class="header__link" href="#project1">Галерея</a>
+      </li>
+    
+      <li>
+        <a  class="header__link" href="#project2">Drag&Drop</a>
+      </li>
+    
+      <li>
+        <a  class="header__link" href="#project3">Мини-игра</a>
+      </li>
+    
+      <li>
+        <a  class="header__link" href="#project4">Слайдер</a>
+      </li>
+    
+      <li>
+        <a  class="header__link" href="#project5">Игра "Заколи лягушку"</a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+
+<section class="about">
+  <div class="about__container">
+    <div class="about__titles">
+      <h1 class="about__title-number">5</h1>
+      <img class="about__img" src="./images/wwwhirl2.svg" alt="logo"/>
+    </div>
+    <h2 class="about__title-text">проектов на JavaScript</h2>
+  </div>
+</section>
+
+
+
+
+<section id="project1" class="gallery">
+  <div class="gallery__wrapper">
+    <div class="gallery__about">
+      <h2 class="gallery__about-title" >Галерея из карточек</h2>
+    </div>
+    <div class="gallery__container">
+      <template class="gallery__slide-template">
+        <div class="gallery__slide">
+          <img class="gallery__slide-img" src="undefined" alt=""/>
+          <a  href="" class="gallery__slide-title" target="blank"></a>
+        </div>
+      </template>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<section id="project2" class="drag-drop">
+  <div class="drag-drop__wrapper">
+    <div class="drag-drop__info">
+      <h2 class="drag-drop__title" >Drag & Drop</h2>
+      <p class="drag-drop__text">Drag’n’Drop – это возможность захватить мышью элемент и перенести его.
+        Перенос мышкой может заменить целую последовательность кликов и упростить внешний
+         вид интерфейса без использования дополнительных полей, виджетов и т.п.
+      </p>
+    </div>
+
+    <div class="drag-drop__rows">
+      <div class="drag-drop__row">
+        <div class="drag-drop__col-header drag-drop__col-header_start">Начать</div>
+        <div class="drag-drop__col-header drag-drop__col-header_progress">В процессе</div>
+        <div class="drag-drop__col-header drag-drop__col-header_done">Готово</div>
+        <div class="drag-drop__col-header drag-drop__col-header_approve">Одобрено</div>
+      </div>
+
+      <div class="drag-drop__row">
+        <div class="drag-drop__placeholder">
+          <div class="drag-drop__item" draggable="true">Перетащи меня</div>
+        </div>
+        <div class="drag-drop__placeholder"></div>
+        <div class="drag-drop__placeholder"></div>
+        <div class="drag-drop__placeholder"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<section id="project3" class="square-game">
+  <div class="square-game__container">
+    <div class="square-game__wrap">
+      <div class="square-game__board" id="board">
+      </div>
+    </div>  
+    <div class="square-game__info">
+      <h2 class="square-game__title">Мини-игра</h2>
+      <p class="square-game__text">В основе лежит идея динамической генерацией контента с помощью 
+        цикла for в JavaScript. Также для случайной генерации цвета активного элемента 
+        используется функция Math.random().
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section id="project4" class="slider">
+  <div class="slider__wrapper-width">
+    <h2 class="slider__title">Обратный слайдер</h2>
+    <div class="slider__wrapper">
+      <div class="slider__container">
+        <div class="slider__sidebar">
+
+          <div class="slider__sidebar-left" style="background: linear-gradient(190.99deg, #e2c002 40%, #232005 205%);">
+            <h2 class="slider__sidebar-title">wild & legendary</h2>
+            <p class="slider__sidebar-text">smoke, petrol & oil spots</p>
+          </div>
+          
+          <div class="slider__sidebar-left" style="background: linear-gradient(200deg, #d1a16e -20%, #452707 130%);">
+            <h2 class="slider__sidebar-title">Rusty & crazy</h2>
+            <p class="slider__sidebar-text">smoke, petrol & oil spots</p>
+          </div>
+          
+          <div class="slider__sidebar-left" style="background: linear-gradient(221.87deg, #a6d3d2 30%, #7eddc2 100%);">
+            <h2 class="slider__sidebar-title">Old & expensive</h2>
+            <p class="slider__sidebar-text">smoke, petrol & oil spots</p>
+          </div>
+          
+          <div class="slider__sidebar-left" style="background: linear-gradient(250.32deg, #f94d03 30%, #a92409 124%);">
+            <h2 class="slider__sidebar-title">Fun & cute</h2>
+            <p class="slider__sidebar-text">smoke, petrol & oil spots</p>
+          </div>
+
+        </div>
+        <div class="slider__main-slide">
+          
+          <!-- <div class="slider__slide" style="
+              background-image: url('https://images.unsplash.com/photo-1622819739658-32980982d826?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+            "></div> -->
+          
+            <div class="slider__slide" style="
+              background-image: url('./images/fiat500_1.jpg');
+            "></div>
+            
+
+          <div class="slider__slide" style="
+              background-image: url('./images/oldcar.avif');
+            "></div>
+          
+          <div class="slider__slide">
+            <video 
+              id="video-cliff"  
+              width="784" 
+              height="512" 
+              src="./images/ford_cliff.mp4" 
+              muted
+              loop
+              poster="./images/poster_video.jpg"
+            ></video>
+          </div>
+
+          <div class="slider__slide" style="
+              background-image: url('./images/yellowpower.avif');
+            "></div>
+
+        </div>
+        <div class="slider__controls">
+          <button class="slider__button slider__button_down">
+            <img class="slider__down-arrow" src="./images/iconmonstr-arrow-20.svg" alt="arrow"/>
+          </button>
+          <button class="slider__button slider__button_up">
+            <img class="slider__up-arrow" src="./images/iconmonstr-arrow-20.svg" alt="arrow"/>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<section id="project5" class="game-click">
+  <div class="game-click__wrapper-width">
+    <h2 class="game-click__main-title">Игра "Заколи Лягушку"</h2>
+    <p class="game-click__main-text">Это мини-игра, в которой Функционал реализован через вертикальную 
+      прокрутку экранов игры внутри контейнера, в котором находится игра. Для случайной 
+      генерации местоположения лягушки на игровом поле и ее цвета используется функция Math.random().
+    </p>
+    <div class="game-click__wrap">
+      <div class="game-click__screen">
+        <h2 class="game-click__title">Click Frog</h2>
+        <a href="#" class="game-click__start" id="start">Начать игру</a>
+      </div>
+
+      <div class="game-click__screen">
+        <h2 class="game-click__title">Выберите время</h2>
+        <ul class="game-click__time-list" id="time-list">
+          <li>
+            <button class="game-click__time-btn" data-time="10">
+              10 сек
+            </button>
+          </li>
+          <li>
+            <button class="game-click__time-btn" data-time="20">
+              20 сек
+            </button>
+          </li> 
+          <li>
+            <button class="game-click__time-btn" data-time="30">
+              30 сек
+            </button>
+          </li>
+          <li>
+            <button class="game-click__time-btn" data-time="40">
+              40 сек
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="game-click__screen">
+        <button class="game-click__button-again">Играть снова</button>
+        <h3 class="game-click__countdown-text">Осталось 
+          <span class="game-click__countdown-time" id="time">00:00</span>
+        </h3>
+        <div class="game-click__board" id="game-click-board"></div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="footer__wrapper">
+      
+      <div class="footer__anchor-container">
+        <a class="footer__anchor-link" href="#header">наверх</a>
+      </div>
+
+      <div class="footer__container">
+        <p class="footer__date">© 2023. Igor Detkin</p>
+        <a class="footer__title" href="https://github.com/IgorDetkin" target="blank">Github</a>
+      </div>
+
+    </div>
+  </footer>
+
+  <div class="popup">
+    <div class="popup__container">
+      <h2 class="popup__title">Поздравляем!</h2>
+      <img  
+        class="popup__img" 
+        src="./images/ogurcy.jpeg"
+        alt="коньтент"
+      />
+      <div class="popup__downBlock">
+        <h2 class="popup__text">Вы выиграли банку огурцов!</h2>
+        <a 
+          class="popup__link" 
+          href="https://orton.ru/sorta-kultur/ogurec/podarok-ogurec/" 
+          target="blank"
+        >Получить уникальный подарок прямо сейчас!</a>
+      </div>
+      <button class="popup__exit"></button>
+    </div>
+  </div>
+
+
+
+
+<script type="module" src="index.js"></script>
+</body>
+</html>

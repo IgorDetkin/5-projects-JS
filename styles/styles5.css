@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css?family=Khula&display=swap");
+
+@keyframes rotation{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+/* * {
+  box-sizing: border-box;
+} */
+ 
+.game-click {
+  background-color: #171616;
+}
+
+.game-click__wrapper-width {
+  margin: 0 auto;
+  padding: 80px 250px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1280px;
+}
+
+.game-click__main-title {
+  color: #eee;
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  margin: 0 0 16px;
+}
+
+.game-click__main-text {
+  color: #909090;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  /* width: 650px; */
+  margin-bottom: 50px;
+
+  align-self: flex-start;
+}
+
+.game-click__wrap {
+  width: 100%;
+  height: 630px;
+  background: linear-gradient(90deg, #29323c 0%, #2f3841 100%);
+  /* background-image: url(../images/frog-svgrepo-com.svg); */
+  /* background-size: 30px; */
+  box-shadow:  0px 0px 30px rgba(136, 136, 136, 0.25);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0;
+  text-align: center;
+}
+
+
+.game-click__screen {
+  /* background-color: rgb(22, 12, 31); */
+  background-image: url(../images/frog-svgrepo-com.svg);
+  background-size: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 630px;
+  /* width: 1200px; */
+  transition: margin 0.5s ease-out;
+  /* background: linear-gradient(90deg, #29323c 0%, #485563 100%); */
+}
+
+.game-click__screen_up {
+  /* margin-top: -100vh; */
+  margin-top: -630px;
+}
+
+.game-click__title {
+  font-size: 65px;
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  color: #fff;
+}
+
+.game-click__start {
+  font-size: 27px;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.game-click__start:hover {
+  color: #16d9e3;
+}
+
+.game-click__time-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.game-click__time-list li {
+  margin: 10px;
+}
+
+.game-click__time-btn {
+  background-color: transparent;
+  border: 2px solid #c0c0c0;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+}
+
+.game-click__time-btn:hover {
+  border: 2px solid #16d9e3;
+  color: #16d9e3;
+}
+
+.game-click__countdown_hide {
+  opacity: 0;
+}
+
+.game-click__countdown-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #fff;
+  margin: 5px 0 18px;
+}
+
+.game-click__result-text {
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  color: #fff;
+}
+
+.game-click__result-point {
+  color: #16d9e3;
+}
+
+.game-click__board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 450px;
+  height: 450px;
+  background: linear-gradient(118.38deg, #29323c 50.6%, #485563 200.44%);
+  /* background-color: #09383b; */
+  box-shadow: 0px 0px 20px #2a333d, 0px 0px 20px #475462;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.game-click__circle {
+  background-image: url(../images/frog-svgrepo-com.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  border-radius: 50%;
+  cursor: pointer;
+  animation: rotation 2s linear infinite;
+}
+
+.game-click__button-again {
+  visibility: hidden;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  color: #fff;
+  background: linear-gradient(118.38deg, #29323c -4.6%, #485563 200.44%);
+  box-shadow: 0px 0px 20px #475462;
+  border: none;
+  border-radius: 15px;
+}
+
+.game-click__button-again_visible {
+  visibility: visible;
+}
+
+.game-click__button-again:hover {
+  border: 2px solid #16d9e3;
+  color: #16d9e3;
+}
