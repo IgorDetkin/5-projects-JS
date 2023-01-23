@@ -410,21 +410,46 @@ popup.addEventListener('click', closePopupOverlay);
 
 
 
-const phrases = [
+const presents = [
     {
-        phrase: 'Ваш приз - мост от Нивы!'
+        phrase: 'Вы выиграли банку огурцов!',
+        pic: './images/ogurcy.jpeg',
+        color: 'green'
     },
     {
-        phrase: 'Вы выиграли коробку от пиццы!'
+        phrase: 'Ваш приз - мост от Нивы!',
+        pic: 'https://vezdexodoff.ru/assets/images/products/396/most-niva.jpg',
+        color: '#303030'
     },
     {
-        phrase: 'Ваш подарок - ведро лисичек!'
+        phrase: 'Вы выиграли мини-коробку!',
+        pic: './images/box2.jpg',
+        color: '#8f7645'
     },
     {
-        phrase: 'Генератор голода теперь ваш!'
-    }
-]
+        phrase: 'Ваш подарок - Вилы!',
+        pic: './images/vily.jpg',
+        color: '#664607'
+    },
+    {
+        phrase: 'Ура! Вы выиграли пакет!',
+        pic: './images/bag.jpg',
+        color: '#5e5e5d'
+    },
+];
 
-function createText(phrase) {
-    
-}
+
+function getRandomPresent(arr) {
+let phraseIndex = Math.floor(Math.random() * arr.length);
+return arr[phraseIndex];
+};
+
+let randomText = getRandomPresent(presents);
+console.log(randomText.phrase);
+
+
+
+
+document.querySelector('.popup__text').textContent = randomText.phrase;
+document.querySelector('.popup__img').src = randomText.pic;
+document.querySelector('.popup__text').style.color = randomText.color;
