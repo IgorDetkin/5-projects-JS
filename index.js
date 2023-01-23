@@ -426,5 +426,5 @@ const phrases = [
 ]
 
 function createText(phrase) {
-
+    
 }
